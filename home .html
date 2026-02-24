@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcial Primer Cómputo</title>
+
+  <style>
+    /* RESET BÁSICO */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* ESTRUCTURA GENERAL */
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      color: #111;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 48px;
+      border-bottom: 1px solid #eaeaea; /* línea gris suave */
+      background: #fff;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      width: 56px;
+      height: auto;
+      display: block;
+    }
+
+    /* Texto superior derecho */
+    .header-right {
+      text-align: right;
+      font-size: 14px;
+      line-height: 1.25;
+      color: #0b2b6b;
+      font-weight: 600;
+    }
+
+    /* CONTENIDO CENTRAL */
+    main {
+      flex: 1; /* empuja el footer abajo */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 16px;
+    }
+
+    .hero-title {
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #3a3a3a;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1432c8; /* azul como la imagen */
+      color: #fff;
+      padding: 18px 16px 22px;
+    }
+
+    .footer-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-title {
+      font-weight: 800;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .team-row {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .member {
+      font-size: 14px;
+      line-height: 1.4;
+      opacity: 0.95;
+      white-space: nowrap;
+    }
+
+    .member strong {
+      font-weight: 800;
+    }
+
+    /* RESPONSIVE EXTRA */
+    @media (max-width: 520px) {
+      header {
+        padding: 14px 16px;
+      }
+      .header-right {
+        font-size: 12px;
+      }
+      .logo img {
+        width: 46px;
+      }
+      .team-row {
+        gap: 18px;
+      }
+      .member {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <!-- PON TU LOGO EN LA MISMA CARPETA CON EL NOMBRE: ugb.png -->
+      <img src="images.png" alt="UGB" />
+    </div>
+
+    <div class="header-right">
+      Parcial Primer Cómputo Ingeniería en Sistemas y<br />
+      Redes Informáticas
+    </div>
+  </header>
+
+  <!-- CONTENIDO CENTRAL -->
+  <main>
+    <h1 class="hero-title">TU PAGINA WEB AQUI</h1>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-title">Integrantes del Equipo</div>
+
+      <div class="team-row">
+        <div class="member">
+          <strong>Omar David Ventura Cruz</strong><br />
+          SMSS029224
+        </div>
+
+        <div class="member">
+          <strong>Yensi Elizabeth Valladares Ventura</strong><br />
+          SMSS057124
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
