@@ -1,0 +1,181 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ESTRUCTURA GENERAL */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  color: #111;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 48px;
+  border-bottom: 1px solid #eaeaea;
+  background: #fff;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 56px;
+  height: auto;
+  display: block;
+}
+
+/* Texto superior derecho */
+.header-right {
+  text-align: right;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #0b2b6b;
+  font-weight: 600;
+}
+
+/* CONTENIDO CENTRAL */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+/* FOOTER */
+footer {
+  background: #1432c8;
+  color: #fff;
+  padding: 18px 16px 22px;
+}
+
+.footer-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-title {
+  font-weight: 800;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.member {
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.95;
+  white-space: nowrap;
+}
+
+.member strong {
+  font-weight: 800;
+}
+
+/* ====== ESTILOS DE LA APP ====== */
+.card {
+  width: min(520px, 95vw);
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 22px;
+  text-align: left;
+}
+
+.card h2 {
+  margin-bottom: 6px;
+  font-size: 20px;
+  color: #0b2b6b;
+}
+
+.card p {
+  margin-bottom: 14px;
+  color: #444;
+  font-size: 14px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #0b2b6b;
+}
+
+button {
+  background: #1432c8;
+  color: #fff;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.92);
+}
+
+.msg {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.msg.error { color: #c62828; }
+.msg.ok { color: #2e7d32; }
+
+/* RESPONSIVE EXTRA */
+@media (max-width: 520px) {
+  header {
+    padding: 14px 16px;
+  }
+  .header-right {
+    font-size: 12px;
+  }
+  .logo img {
+    width: 46px;
+  }
+  .team-row {
+    gap: 18px;
+  }
+  .member {
+    white-space: normal;
+  }
+}
